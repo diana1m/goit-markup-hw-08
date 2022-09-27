@@ -1,0 +1,36 @@
+.clients {
+    @include section (94px, 94px);
+} 
+
+.clients-list {
+    @include list();
+}
+
+.clients-item {
+    width: 170px;
+    height: 92px;
+    @include item(6);
+}
+
+.clients-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+    /* fill: var(--icons-color); */
+    color: var(--icons-color);
+    transition: border-color var(--anim-main), color var(--anim-main);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-bg-color);
+        color: var(--accent-bg-color);
+    }
+}
+
+.clients-icon {
+    fill: currentColor;
+}

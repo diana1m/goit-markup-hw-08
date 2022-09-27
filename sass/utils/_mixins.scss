@@ -1,0 +1,36 @@
+@mixin transition($one, $two, $three, $time, $func) {
+    transition-property: $one, $two, $three;
+    transition-duration: $time;
+    transition-timing-function: $func;
+}
+
+@mixin section($pt: 94px, $pb: 94px) {
+    padding-top: $pt;
+    padding-bottom: $pb;
+}
+
+@mixin list($d: flex, $g: 30px, $fd, $fw) {
+    display: $d;
+    gap: $g;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+}
+
+@mixin item($q: 4, $g: 30px) {
+    flex-basis: calc((100% - (#{$q} - 1) * #{$g}) / #{$q});
+}
+
+@mixin font($ff, $fs, $fw, $lh, $ls, $fc) {
+    font-family: $ff;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+    color: $fc;
+}
+
+@mixin center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

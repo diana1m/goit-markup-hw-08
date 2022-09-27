@@ -1,0 +1,23 @@
+/* .contacts__item {
+}   */
+
+.contacts__link {
+    color: inherit;
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transition: color var(--anim-main);
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+}
+
+.contacts__icon {
+    fill: currentColor;
+}

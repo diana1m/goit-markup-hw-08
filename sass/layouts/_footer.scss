@@ -1,0 +1,31 @@
+.footer {
+    background-color: var(--bg-color);
+    @include section(60px, 60px);
+}
+
+.footer__container {
+    display: flex;
+    // gap: 70px;
+    align-items: baseline;
+}
+
+.footer__address-box{
+    margin-right: 70px;
+}
+
+.footer__socials-box{
+    margin-right: auto;
+}
+
+.footer__title {
+    font-weight: 700;
+    line-height: calc(16 /14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--light-text-color);
+
+    margin-bottom: 20px;
+    display: inline-block;
+}
+

@@ -1,0 +1,29 @@
+.btn-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: color var(--anim-main), border-color var(--anim-main);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-bg-color);
+        border-color: var(--accent-bg-color);
+    }
+}
+
+.icon-close {
+    fill: currentColor;
+}

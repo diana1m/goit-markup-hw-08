@@ -1,0 +1,36 @@
+.about {
+    @include section (null, 94px);
+}
+
+.about__list{
+    @include list();
+}
+
+.about__item {
+    position: relative;
+    @include item(3);
+}
+
+.about__label-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.about__label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 /14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-text-color);
+}

@@ -1,0 +1,29 @@
+// .address {}
+
+// .address-list {}
+
+.address__item {
+    margin-bottom: 9px;
+
+    &:last-child {
+    margin-bottom: 0;
+}
+}
+
+.address__address {
+    color: var(--light-text-color);
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+}
+
+.address__contacts {
+    color: var(--contacts-text-color);
+    line-height: calc(24 /14);
+    letter-spacing: 0.03em;
+    transition: color var(--anim-main);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+}
