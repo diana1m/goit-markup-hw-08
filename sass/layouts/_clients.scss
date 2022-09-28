@@ -3,7 +3,7 @@
 } 
 
 .clients-list {
-    @include list();
+    @include list(flex, 30px, null, null);
 }
 
 .clients-item {
