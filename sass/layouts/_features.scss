@@ -1,14 +1,31 @@
 .features {
-    @include section(94px, 94px);
+    @include section (60px, 60px);
+    
+    @media screen and (min-width: 1200px) {
+        @include section (94px, 94px);
+    }
 }
 
 .features__list{
-    display: flex;
-    gap: 30px;
+    @include list(flex, 30px, row, wrap);
+    
+    @media screen and (min-width: 1200px) {
+        @include list(flex, 30px, row, nowrap);
+    }
 }
 
 .features__item {
-    @include item();
+    // height: 226px;
+    @include item(1, 30px);
+    
+    @media screen and (min-width: 768px) {
+        @include item(2, 30px);
+    }
+    
+    @media screen and (min-width: 1200) {
+        @include item (4, 30px);
+        // height: 248px;
+    }
 }
 
 .features__box {
@@ -25,10 +42,15 @@
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
 
     margin-bottom: 10px;
 
     color: var(--title-text-color);
+
+    @media screen and (min-width: 768px) {
+        text-align: start;
+    }
 }
 
 .features__text {

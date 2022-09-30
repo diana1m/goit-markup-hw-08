@@ -3,7 +3,15 @@
 // .address-list {}
 
 .address__item {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 9px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+    }
+
 
     &:last-child {
     margin-bottom: 0;
@@ -14,6 +22,8 @@
     color: var(--light-text-color);
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
+
+    text-align: center;
 }
 
 .address__contacts {

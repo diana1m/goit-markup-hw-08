@@ -1,15 +1,30 @@
 .clients {
-    @include section (94px, 94px);
+    @include section (60px, 60px);
+    
+    @media screen and (min-width: 1200px) {
+        @include section (94px, 94px);
+    }
 } 
 
 .clients-list {
-    @include list(flex, 30px, null, null);
+    @include list(flex, 30px, row, wrap);
+
+    @media screen and (min-width: 1200px) {
+       @include list(flex, 30px, row, nowrap); 
+    }
 }
 
 .clients-item {
-    width: 170px;
     height: 92px;
-    @include item(6);
+    @include item(2, 30px);
+
+    @media screen and (min-width: 768px) {
+        @include item(3, 30px);
+    }
+
+    @media screen and (min-width: 1200) {
+        @include item (6, 30px);
+    }
 }
 
 .clients-link {
