@@ -6,15 +6,28 @@
 .footer__container {
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        @include list(flex, 0, row, wrap);
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+
     @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-direction: row;
+        @include list(flex, 0, row, nowrap);
         align-items: baseline;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
 .footer__address-box{
     margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: auto;
+    }
+
     @media screen and (min-width: 1200px) {
         margin-right: 70px;
         margin-bottom: 0;

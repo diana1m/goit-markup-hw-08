@@ -1,17 +1,36 @@
 .team {
-    @include section(94px, 94px);
-    background-color: var(--secondary-bg-color);
+    @include section(60px, 60px);
+
+    @media screen and (min-width: 1200px) {
+        @include section(94px, 94px);
+        background-color: var(--secondary-bg-color);
+    }
 }
 
 .team-list {
-    @include list(flex, 30px, null, null);
+    @include list(flex, 30px, column, nowrap);
+
+    @media screen and (min-width: 768px) {
+        @include list(flex, 30px, row, wrap);
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include list(flex, 30px, row, nowrap);
+    }
 } 
 
 .team-item {
     background-color: var(--light-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    flex-basis: calc((100% - 30px * 3)/4);
+
+    @media screen and (min-width: 768px) {
+        @include item(2, 30px);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        @include item(4, 30px);
+    }
 }
 
 /* .team-img {} */
