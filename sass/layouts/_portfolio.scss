@@ -3,14 +3,26 @@
 }
 
 .portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    flex-basis: 1170px;
+    @include list(flex, 30px, column, nowrap);
+
+    @media screen and (min-width: 768px) {
+        @include list(flex, 30px, row, wrap);
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include list(flex, 30px, row, nowrap);
+    }
 }
 
 .portfolio-item {
-    flex-basis: calc((100% - 30px * 2) / 3);
+//     flex-basis: calc((100% - 30px * 2) / 3);
+    @media screen and (min-width: 768px) {
+        @include item(2, 30px);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        @include item(3, 30px);
+    }
 }
 
 .portfolio-link {

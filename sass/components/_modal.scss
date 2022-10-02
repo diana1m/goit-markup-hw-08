@@ -21,8 +21,8 @@
 
 .modal {
     margin: auto;
-    height: 581px;
-    width: 528px;
+    height: 609px;
+    width: 450px;
     padding: 40px;
 
     position: absolute;
@@ -31,4 +31,9 @@
     transform: translate(-50%, -50%);
 
     background-color: var(--light-bg-color);
+
+    @media screen and (min-width: 1200px) {
+        height: 581px;
+        width: 528px;
+    }
 }

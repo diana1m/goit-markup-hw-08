@@ -2,13 +2,17 @@
     display: block;
     font-weight: 700;
     font-size: 20px;
-    line-height: calc(23 / 20);
+    line-height: calc(30 / 20);
     text-align: center;
     letter-spacing: 0.03em;
 
     margin-bottom: 12px;
 
     color: var(--title-text-color);
+
+    @media screen and (min-width: 1200px) {
+        line-height: calc(23 / 20);
+    }
 }
 
 .register-form-field {
@@ -115,8 +119,14 @@
 
 .register-form-desc {
     font-weight: 400;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: calc(24 / 14);
+    }
 }
 
 .register-form-link {

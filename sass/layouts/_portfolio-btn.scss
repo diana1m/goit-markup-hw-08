@@ -1,17 +1,16 @@
 .btn-list{
     display: flex;
     flex-wrap: wrap;
-    @media screen and (min-width: 768px) {
-        flex-wrap: nowrap;
-    }
-}
-
-.btn-list {
     gap: 8px;
-    justify-content: center;
     flex-basis: 575px;
 
-    margin-bottom: 50px;
+    margin-bottom: 50px;   
+    margin-left: 0; 
+
+    @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
 }
 
 /* .btn-item {}  */
