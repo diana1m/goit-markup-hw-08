@@ -1,9 +1,9 @@
 .team {
     @include section(60px, 60px);
+    background-color: var(--secondary-bg-color);
 
     @media screen and (min-width: 1200px) {
         @include section(94px, 94px);
-        background-color: var(--secondary-bg-color);
     }
 }
 

@@ -62,6 +62,17 @@
             </a>
           </li>
         </ul>
+
+         <button
+          class="menu__btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./image/sprite.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--main-->
@@ -405,5 +416,84 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile menu -->
+    <div class="menu__container js-menu-container" id="mobile-menu">
+        <button class="menu__toggle js-close-menu">
+          <svg width="24" height="24">
+            <use href="./image/sprite.svg#menu-close"></use>
+          </svg>
+        </button>
+
+          <ul class="menu__list list">
+            <li class="menu__item">
+              <a class="menu__link link" href="./index.html">Студія</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link menu__current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="">Контакти</a>
+            </li>
+          </ul>
+
+        <ul class="menu__contacts-list list">
+          <li class="menu__contacts-item">
+            <a class="menu__phone-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="menu__contacts-item">
+            <a class="menu__mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="menu__socials list">
+          <li class="menu__socials-item">
+            <a class="menu__socials-link link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram">
+                Instagram 
+            </a>
+          </li>
+          <li class="menu__socials-item">
+            <a class="menu__socials-link link" 
+                href="https://twitter.com"
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer">
+                Twitter
+              </a>
+          </li>
+          <li class="menu__socials-item">
+            <a class="menu__socials-link link" 
+                href="https://facebook.com"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer">
+                Facebook
+              </a>
+          </li>
+          <li class="menu__socials-item">
+            <a class="menu__socials-link link" 
+                href="https://linkedin.com"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer">
+                LinkedIn
+              </a>
+          </li>
+        </ul>
+    </div>
+
+    <!--JS-->
+    <!-- mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
