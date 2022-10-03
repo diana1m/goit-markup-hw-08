@@ -458,6 +458,11 @@ body {
           transform: translate(-50%, -50%);
   background-color: var(--light-bg-color);
 }
+@media screen and (max-width: 425px) {
+  .modal {
+    width: 95%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     height: 581px;
@@ -846,6 +851,11 @@ body {
   margin-bottom: 32px;
   color: var(--accent-text-color);
 }
+@media screen and (max-width: 425px) {
+  .menu__phone-link {
+    font-size: 24px;
+  }
+}
 
 .menu__mail-link {
   font-weight: 500;
@@ -860,6 +870,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+}
+@media screen and (max-width: 425px) {
+  .menu__socials {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .menu__socials-item:not(:last-child) {
