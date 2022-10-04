@@ -10,7 +10,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        @include list(flex, 30px, row, nowrap);
+        @include list(flex, 30px, row, wrap);
     }
 }
 
@@ -70,6 +70,10 @@
     letter-spacing: 0.03em;
 
     color: var(--light-text-color);
+
+    @media screen and (max-width: 380px) {
+        font-size: 14px;
+    }
 }
 
 .info-box {
