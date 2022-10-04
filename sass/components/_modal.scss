@@ -9,14 +9,12 @@
     background-color: rgba(0, 0, 0, 0.1);
 
     transition: opacity 500ms, visibility 1000ms;
-    /* transition: transform 500ms; */
 }
 
 .is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    /* transform: scale(0.5); */
 }
 
 .modal {

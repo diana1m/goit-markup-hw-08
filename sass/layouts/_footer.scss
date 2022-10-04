@@ -4,41 +4,31 @@
 }
 
 .footer__container {
-    display: flex;
-    flex-direction: column;
+    @include list(flex, 60px, column, nowrap);
 
     @media screen and (min-width: 768px) {
         @include list(flex, 0, row, wrap);
-        padding-left: 75px;
-        padding-right: 75px;
+        height: 343px;
+        justify-content: space-around;
+        align-items: baseline;
+        align-content: space-between;
     }
 
     @media screen and (min-width: 1200px) {
         @include list(flex, 0, row, nowrap);
-        align-items: baseline;
-        padding-left: 0;
-        padding-right: 0;
+        height: auto;
     }
 }
 
 .footer__address-box{
-    margin-bottom: 60px;
-
-    @media screen and (min-width: 768px) {
-        margin-right: auto;
-    }
-
     @media screen and (min-width: 1200px) {
         margin-right: 70px;
-        margin-bottom: 0;
     }
 }
 
 .footer__socials-box{
-    margin-bottom: 60px;
     @media screen and (min-width: 1200px) {
         margin-right: auto;
-        margin-bottom: 0;
     }
 }
 
