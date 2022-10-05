@@ -957,7 +957,6 @@ body {
 
 .hero__title {
   font-weight: 900;
-  font-size: 26px;
   line-height: 1.6153846154;
   text-align: center;
   letter-spacing: 0.06em;
@@ -967,6 +966,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 360px;
+}
+@media screen and (max-width: 480px) {
+  .hero__title {
+    font-size: 6vw;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -1523,8 +1527,14 @@ body {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-list {
@@ -1568,6 +1578,11 @@ body {
   }
 }
 
+.portfolio-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 @media screen and (min-width: 768px) {
   .portfolio-item {
     -ms-flex-preferred-size: calc((100% - (2 - 1) * 30px) / 2);
@@ -1582,7 +1597,13 @@ body {
 }
 
 .portfolio-link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-transform: box-shadow var(--anim-main);
           transform: box-shadow var(--anim-main);
 }
@@ -1641,6 +1662,9 @@ body {
 }
 
 .info-box {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: 0;

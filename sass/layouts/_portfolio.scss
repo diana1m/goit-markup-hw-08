@@ -1,5 +1,9 @@
 .portfolio{
-    @include section (94px, 94px);
+    @include section (60px, 60px);
+
+    @media screen and (min-width: 1200px) {
+        @include section (94px, 94px);
+    }
 }
 
 .portfolio-list {
@@ -15,7 +19,8 @@
 }
 
 .portfolio-item {
-//     flex-basis: calc((100% - 30px * 2) / 3);
+    display: flex;
+    
     @media screen and (min-width: 768px) {
         @include item(2, 30px);
     }
@@ -26,7 +31,9 @@
 }
 
 .portfolio-link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    // display: block;
     transform: box-shadow var(--anim-main);
 
     &:hover,
@@ -77,6 +84,9 @@
 }
 
 .info-box {
+    // display: flex;
+    // flex-direction: column;
+    flex-grow: 1;
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: 0;

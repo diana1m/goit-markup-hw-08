@@ -61,7 +61,7 @@
 
 .hero__title {
     font-weight: 900;
-    font-size: 26px;
+    // font-size: 26px;
     line-height: calc(42 / 26);
     text-align: center;
     letter-spacing: 0.06em;
@@ -74,6 +74,10 @@
     margin-right: auto;
 
     max-width: 360px;
+
+    @media screen and (max-width:480px) {
+        font-size: 6vw;
+    }
 
     @media screen and (min-width: 1200px) {
         font-size: 44px;
