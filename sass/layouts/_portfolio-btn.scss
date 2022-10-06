@@ -13,7 +13,11 @@
     }
 }
 
-/* .btn-item {}  */
+.btn-item {
+    @media screen and (max-width: 480px) {
+        margin-bottom: 8px;
+    }
+} 
 
 .btn-portfolio {
     font-family: inherit;

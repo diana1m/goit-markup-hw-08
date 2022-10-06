@@ -7,7 +7,10 @@
 }
 
 .features__list{
-    @include list(flex, 30px, row, wrap);
+    
+    @media screen and (min-width: 768px) {
+        @include list(flex, 30px, row, wrap);
+    }
     
     @media screen and (min-width: 1200px) {
         @include list(flex, 30px, row, nowrap);
@@ -15,16 +18,19 @@
 }
 
 .features__item {
-    // height: 226px;
-    @include item(1, 30px);
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
     
     @media screen and (min-width: 768px) {
+        margin-bottom: 0;
         @include item(2, 30px);
     }
     
     @media screen and (min-width: 1200) {
         @include item (4, 30px);
-        // height: 248px;
     }
 }
 
