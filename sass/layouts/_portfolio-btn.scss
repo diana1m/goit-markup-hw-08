@@ -1,7 +1,9 @@
 .btn-list{
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    // gap: 8px;
+    column-gap: 8px;
+    row-gap: 15px;
     flex-basis: 575px;
 
     margin-bottom: 50px;   
@@ -13,11 +15,11 @@
     }
 }
 
-.btn-item {
-    @media screen and (max-width: 480px) {
-        margin-bottom: 8px;
-    }
-} 
+// .btn-item {
+//     @media screen and (max-width: 767px) {
+//         margin-bottom: 8px;
+//     }
+// } 
 
 .btn-portfolio {
     font-family: inherit;

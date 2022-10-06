@@ -725,13 +725,17 @@ body {
   }
 }
 
-.contacts__phone-link {
-  padding-bottom: 21px;
+@media screen and (max-width: 1199px) {
+  .contacts__phone-link {
+    padding-bottom: 21px;
+  }
 }
 
-.contacts__mail-link {
-  padding-top: 21px;
-  margin-bottom: 10px;
+@media screen and (max-width: 1199px) {
+  .contacts__mail-link {
+    padding-top: 21px;
+    margin-bottom: 10px;
+  }
 }
 
 .contacts__icon {
@@ -833,6 +837,11 @@ body {
   line-height: 47px;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  -webkit-transition: color var(--anim-main);
+  transition: color var(--anim-main);
+}
+.menu__link:hover, .menu__link:focus {
+  color: var(--accent-text-color);
 }
 
 .menu__current {
@@ -864,6 +873,11 @@ body {
   line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  -webkit-transition: color var(--anim-main);
+  transition: color var(--anim-main);
+}
+.menu__mail-link:hover, .menu__mail-link:focus {
+  color: var(--accent-text-color);
 }
 
 .menu__socials {
@@ -1489,7 +1503,10 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 8px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  row-gap: 15px;
   -ms-flex-preferred-size: 575px;
       flex-basis: 575px;
   margin-bottom: 50px;
@@ -1502,12 +1519,6 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .btn-item {
-    margin-bottom: 8px;
   }
 }
 
@@ -1621,6 +1632,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
   -webkit-transform: box-shadow var(--anim-main);
           transform: box-shadow var(--anim-main);
 }
@@ -1640,6 +1652,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
+  overflow-y: scroll;
   -webkit-transform: translateY(101%);
           transform: translateY(101%);
   -webkit-transition: -webkit-transform var(--anim-main);
@@ -1671,11 +1684,6 @@ body {
   line-height: 1.5555555556;
   letter-spacing: 0.03em;
   color: var(--light-text-color);
-}
-@media screen and (max-width: 380px) {
-  .overlay-text {
-    font-size: 14px;
-  }
 }
 
 .info-box {

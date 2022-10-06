@@ -53,12 +53,16 @@
 }
 
 .contacts__phone-link{
-    padding-bottom: 21px;
+    @media screen and (max-width: 1199px) {
+        padding-bottom: 21px;
+    }
 }
 
 .contacts__mail-link {
-    padding-top: 21px;
-    margin-bottom: 10px; 
+    @media screen and (max-width: 1199px) {
+        padding-top: 21px;
+        margin-bottom: 10px; 
+    }
 }
 
 .contacts__icon {

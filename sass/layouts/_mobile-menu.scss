@@ -82,6 +82,12 @@
     letter-spacing: 0.02em;
 
     color: var(--title-text-color);
+    transition: color var(--anim-main);
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-text-color);
+        }
 }
 
 .menu__current {
@@ -119,6 +125,12 @@
     letter-spacing: 0.02em;
 
     color: var(--primary-text-color);
+    transition: color var(--anim-main);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
 }
 
 .menu__socials {
