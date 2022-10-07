@@ -8,7 +8,7 @@
 }
 
 .team-list {
-    @include list(flex, 30px, column, nowrap);
+    // @include list(flex, 30px, column, nowrap);
 
     @media screen and (min-width: 768px) {
         @include list(flex, 30px, row, wrap);
@@ -24,7 +24,14 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
     @media screen and (min-width: 768px) {
+        margin-bottom: 0;
         @include item(2, 30px);
     }
     

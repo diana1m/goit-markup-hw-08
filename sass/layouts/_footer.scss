@@ -4,7 +4,7 @@
 }
 
 .footer__container {
-    @include list(flex, 60px, column, nowrap);
+    // @include list(flex, 60px, column, nowrap);
 
     @media screen and (min-width: 768px) {
         @include list(flex, 0, row, wrap);
@@ -21,14 +21,41 @@
 }
 
 .footer__address-box{
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+
     @media screen and (min-width: 1200px) {
         margin-right: 70px;
     }
 }
 
 .footer__socials-box{
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+
     @media screen and (min-width: 1200px) {
         margin-right: auto;
+    }
+}
+
+.footer__group{
+    @media screen and (min-width: 768px) {
+        margin-bottom: 60px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        
+        margin-bottom: 0;
     }
 }
 

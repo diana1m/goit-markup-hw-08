@@ -21,21 +21,21 @@
     margin: auto;
     padding: 40px;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
 
     background-color: var(--light-bg-color);
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 480px) {
         width: calc(100% - 30px);
-        // 
     }
 
-    @media screen and (min-width: 768px) {
-        height: 609px;
+    @media screen and (min-width: 480px) {
         width: 450px;
+        height: 609px;
     }
 
     @media screen and (min-width: 1200px) {
